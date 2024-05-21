@@ -1,0 +1,12 @@
+/* style.css */
+body {
+    background-color: #f0f0f0; /* Color de fondo para la página */
+}
+
+h1 {
+    color: #333333; /* Color del texto para el título */
+}
+
+p {
+    color: #666666; /* Color del texto para los párrafos */
+}
