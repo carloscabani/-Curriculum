@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,500;1,400&family=Nobile:ital,wght@1,700&display=swap');
 
+body {
+    background-color: #fffffe; 
+}
 
 
 * {
@@ -9,6 +12,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
+    
     }
 
 h1 {
@@ -16,6 +20,11 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: italic;
+    color: #272343;
+}
+
+header h1{
+    text-align: center;
 }
 
 h2 {
@@ -23,6 +32,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: italic;
+    color: #272343;
 }
 
 p{
@@ -30,10 +40,153 @@ p{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: #2d334a;
 }
 
 span {
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 400;
     font-style: italic;
+    
+}
+
+
+.caja-multimedia {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #F2FAAB;
+}
+
+.caja-multimedia h2 {
+    margin-top: 0;
+}
+
+
+#ubicacion iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.media-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.media-item img, .media-item video {
+    display: block;
+    margin: 0 auto;
+}
+
+.media-item figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.contenedor-inicial{
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+    margin: 5%;
+
+}
+
+
+nav {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.descripcion {
+    flex: 2;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #004643;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.segundo-contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* espacio entre secciones */
+    margin: 2%;
+}
+
+.segundo-contenedor section{
+    flex: 1;
+    border: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #e3f6f5;
+}
+
+
+@media (max-width: 800px) {
+    .segundo-contenedor {
+        flex-direction: column;
+        gap: 20%;
+    }
+}
+
+.tercer-contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px; 
+    padding: 20px;
+    margin: 2%;
+}
+
+.tercer-contenedor section{
+    flex: 1;
+    border: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #e3f6f5;
+}
+
+button[type="submit"] {
+    background-color: #e6f748; /* Color verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Ajuste del relleno */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo cuando el cursor está sobre el botón */
+button[type="submit"]:hover {
+    background-color: #F2FAAB; /* Cambia el color al pasar sobre el botón */
 }
